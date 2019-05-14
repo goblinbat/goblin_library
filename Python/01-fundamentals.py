@@ -1,6 +1,8 @@
 """
 Math, parsing, lists, tuples, dictionaries, 
 strings, condtionals, none vs 0
+
+press ctrl + alt + m to run file
 """
 
 
