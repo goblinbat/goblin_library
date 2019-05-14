@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="../CSS/01-Basics.css">
+    
+    <title>HTML Basics</title>
+</head>
+<body>
+    <header><b>HTML and CSS Basics</b></header>
+    <br>
+    <div class="text-tags">
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+        <h6>h6</h6>
+        <p>p tag</p>
+    </div>  <!--help organize layout, useful when working with css-->
+    <br>    <!--page break-->
+    <hr>    <!--adds a horizontal line for dividing sections or divs or whatever-->
+    <section class="lists">
+        <h1>Lists</h1>
+        <h5>Ordered List</h5>
+        <ol>
+            <li>numbered</li>
+            <li>good for listing steps</li>
+            <li>good for things that should be done in order</li>
+            <li><strike>oh yeah, and you can also cross out list items</strike></li>
+        </ol>
+        <h5>Unordered List</h5>
+        <ul>
+            <li>bullet points</li>
+            <li>good for listing things without steps, etc</li>
+            <li>good for things that don't have any real order</li>
+            <li><strike>you can cross out things on unordered lists, too</strike></li>
+        </ul>
+    </section>
+    <div>
+        <a href='#'>Here's a link</a>
+        <img src="../assets/upfeathers.png" alt="alt text is what will show if the image can't load" title="this should show up if you hover over the image">       <!--can link to an image in the project folder or you can use an https:// link-->
+    </div>
+    <section class="cssInfo">
+        <h1>On CSS</h1>
+        <h3>CSS Statements</h3>
+        <p>Four main components include the following: </p>
+        <ol>
+            <li><b>Declaration:</b> the statement as a whole with curly braces.</li>
+            <li><b>Selector: </b>the name of the part you want to syle.</li>
+            <li><b>Property: </b>properties to edit (e.g., width, height, background, etc.)</li>
+            <li><b>Value: </b>numbers, colors, urls - values that we assign.</li>
+        </ol>
+        <br>
+        <h4>Classes</h4>
+        <p>A CSS Class is an identifier of an element which can be used multiple times on a page.</p>
+        <ul> 
+            <li>Classes start with . in the selector <b>.anything-you-want-to-name-it</b></li> 
+            <li>The same class name can be used more than once within the same file</li>
+            <li>The class keyword refers to the class name that you set in the html page in the specific tag.</li>
+            <li>In the CSS file, you can identify a class on the whole, or you can identify particluar parts to style 
+                (ex: p tags, h3, or li tags)</li>
+        </ul>
+        <br>
+        <h4>Ids</h4>
+        <ul class="ch0">
+            <li id="ch1">Start with a pound (#)</li>
+            <li id="ch2">Uses: header or an about section</li>
+            <li id="ch3">Should only be used once per page - they are unique! Important with Javascript later on</li>
+            <li id="ch4">Use for one-off styling</li>
+        </ul>
+        <br>
+        <h4>Classes vs Ids</h4>
+        <ul>
+            <li>Ids use '#name' in css: classes use '.name' in css</li>
+            <li>You can't have two ids on an element: you can have as many classes on an element as you want</li>
+        </ul>
+        <div class="padding_ex">
+            <p>Padding goes on the inside of an element </p>
+        </div>
+        <div class="margin_ex">
+            <p>Margins go on the outside of an element</p>
+        </div>
+
+        <hr>
+
+        <h1>Font</h1>
+        <p>In CSS, there are two types of font family names:</p>
+        <ul>
+            <li><b>generic family:</b> a group of font families with a specific look (ex: serif)</li>
+            <li><b>font family:</b> a specific font family (ex: "Times New Roman" or Arial)</li>
+        </ul>
+        <p>The font-family property should hold several font names as a fallback in case the browser doesn't 
+            support the first font you picked. <br>Always start with the font you want, and end with a 
+            generic family. Also, if the font family is more than one word, it must be in <br>quotation 
+            marks (ex: "Times New Roman").</p>
+
+        <h2>Here is a list of the CSS font properties:</h2>
+        <dl>
+            <dt>font:</dt>
+            <dd>sets all the font properties in one declaration</dd>
+            <dt>font-family:</dt>
+            <dd>specifies the font family for text</dd>
+            <dt>font-size:</dt>
+            <dd>specifies the font size of text</dd>
+            <dt>font-weight:</dt>
+            <dd>specifies the weight of a font</dd>
+        </dl>
+    </section>
+    <br><br>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../CSS/02-Basics2.css">
+    <title>Slightly-less-basic basics</title>
+</head>
+<body>
+    <nav>
+        <h3>navbar</h3>
+        <ul>
+            <li><a href="#" target="blank">Link</a></li>
+            <li><a href="#" target="blank">Link</a></li>
+            <li><a href="#" target="blank">Link</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Tables, Inputs, Forms, Headers, Footers</h1>
+        <h4>Header</h4>
+        <ul>  
+            <li>Can be the beginning of any section. Not just top of page.</li>  
+            <li>Semantic element that lets us know where a section begins.</li>  
+            <li>Allows you to more easily style the headers of a section.</li>
+        </ul>
+    </header>
+    <div class="flex-container">
+        <div class="tableSec">
+            <h3>Tables</h3>
+            <table>
+                <tr>            <!--table row-->
+                    <th>Name</th>   <!--table header-->
+                    <th>Age</th>
+                    <th>Species</th>
+                    <th>Occupation</th>
+                </tr>
+                <tr>
+                    <td>Ann</td>   <!--table cell content-->
+                    <td>22</td>
+                    <td>Shapeshifter</td>
+                    <td>Mage, Adventurer</td>
+                </tr>
+                <tr>
+                    <td>Min</td>
+                    <td>???</td>
+                    <td>Aigiasyn</td>
+                    <td>Traveller</td>
+                </tr>
+            </table>
+        </div>
+        
+        <form>
+            <h3>Form</h3>
+            <p><label>Customer Name: <input></label></p>
+            <p><label>Street Address: <input></label></p>
+            <p><label>City: <input></label></p>
+            <p><label>Area Code: <input></label></p>
+            <p><label>Telephone: <input></label></p>
+            <p><input type="radio">radio</p>
+            <p><input type="checkbox">checkbox</p>
+            <button>Submit</button>
+        </form>
+    </div>
+    <hr>
+    <article>
+        <header>
+            <h3>Articles</h3>
+        </header>
+        <section>
+            <ul>    
+                <li>Use in posts</li>    
+                <li>Independent content</li>    
+                <li>RSS feed</li>    
+                <li>Content makes sense on its own when everything else is gone.</li>    
+                <li>Specialized kind of section</li>
+            </ul>​​
+        </section>
+    </article>
+    <h3>iframes allow you to put videos on a page</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/owsfdh4gxyc" frameborder="0" allowfullscreen></iframe>
+    <hr>
+    <section class="cssInfo">
+        <h1>On CSS</h1>
+        <h3>Backgrounds</h3>
+        <p>You can set the background of your webpage to a simple color, or you can use an image. The background you set can be for the entire page and/or for certain divs.</p>
+        <h3>Width and Height</h3>
+        <p>The width and height properties are used to set the width and height of an element</p>
+        <p>The default setting for width and height is auto, which means the browser decides the width and height. </p>
+        <p>Other settings for width and height are:</p>
+        <ul>
+            <li>specified length values such as px and em</li>
+            <li>percent of the containing div (ex: 50%, 100%)</li>
+        </ul>
+        <div class="borders row">
+            <div class="border-style col-6">
+                <h3><u>Border Style</u></h3>
+                <p>The border-style property can take up to four values (top border, right border, bottom border, and left border). 
+                The following border-style values are allowed:</p>
+                <ul>
+                    <li><b>dotted:</b> dotted border</li>
+                    <li><b>dashed:</b>  dashed border</li>
+                    <li><b>solid:</b>  solid border</li>
+                    <li><b>double:</b>  double border</li>
+                    <li><b>groove:</b>  3D grooved border, depends on border-color value</li>
+                    <li><b>ridge:</b>  3D ridged border, depends on the border-color value</li>
+                    <li><b>inset:</b>  3D inset border, depends on the border-color value</li>
+                    <li><b>none:</b>  no border</li>
+                    <li><b>hidden:</b> hidden border</li>
+                    <li><b>mixed:</b> you can set a different border style for the top, bottom, right, and left</li>
+                </ul>
+            </div>
+            <div class="col-6">
+                <div class="border-width">
+                    <h3><u>Border Width</u></h3>
+                    <h4>VERY IMPORTANT: border-width will not work unless you have border-style set!!</h4>
+                    <p>Border-width can be set to a specific size (px, em, etc) or you can use one of the following pre-set settings: thin, medium, thick. The border-width property can also take up to four values (top, right, bottom, left) (although I can't seem to get this to work)</p>
+                </div>
+                <div class="border-color">
+                    <h3><u>Border Color</u></h3>
+                    <h4>VERY IMPORTANT: border-color will not work unless you have border-style set!!</h4>
+                    <p>Border-color can be set by the following ways:</p>
+                    <ul>
+                        <li><b>name:</b> specify a color such as "lightblue"</li>
+                        <li><b>Hex:</b> specify a hex value, like "#eee"</li>
+                        <li><b>RGB:</b> specify a RGB value, like "rgb(100,100,100)"</li>
+                        <li><b>transparent</b></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="positioning">
+            <h1>Position</h1>
+            <p>The position property specifies the type of positioning method used for an element. The four position 
+                values are:</p>
+            <ul>
+                <li><b>fixed:</b> this will pin something to a spot, and it will stay there as you scroll (ex: navigation bar).
+                Fixed position takes elements out of the normal document flow.</li>
+                <li><b>static:</b> this is the default setting, it is not affected by top, bottom, left, and right properties.
+                        It is always positioned according to the normal flow of the page.</li>
+                    <li><b>relative:</b> does not take the element out of normal document flow. Still appears within its 
+                    space/div/container, but allows it to be offset a bit from the top, bottom, right, left. Top, right, bottom, 
+                    and left properties will move it away from its normal position. Other content will not be adjusted to fit 
+                    into any gap left by the element.</li>
+                <li><b>absolute:</b> takes element out of the normal document flow. If a parent element position is set to 
+                    relative, and the child element is set to absolute, the child element's new (0,0) coordinate will be the 
+                    upper left hand corner of the parent element instead of the whole page. </li>
+                <li>The <b>z-index</b> property allows you to override the normal stacking order of the page. The default 
+                    z-index is 0, and you can set that value to be positive or negative. An element with a greater z-index 
+                    will stack in front of an element with a lower z-index. If two elements have the same z-index, or don't 
+                    have one assigned, the element positioned last in the HTML will show on top. You must have a position 
+                    assigned in order to assign a z-index. </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <h2>Footer</h2>
+    </footer>
+</body>
+</html>

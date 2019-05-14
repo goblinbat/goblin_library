@@ -1,0 +1,12 @@
+These are challenges from Gold Badge that I'm 
+copy/pasting here as references.
+
+Some have their ui and repo components in separate files, 
+some have both in 1 file
+
+
+cafe_repo / cafe_ui were challenge 1
+claim was challenge 2
+outing was challenge 3
+badge_repo / Badge_ui were challenge 4
+greet_repo / greet_ui were challenge 5
